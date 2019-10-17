@@ -27,7 +27,7 @@
         <spring-mobile-device.version>1.1.5.RELEASE</spring-mobile-device.version>
 
         <!--阿里资源配置-->
-        <ali.fastjson.version>1.2.5</ali.fastjson.version>
+        <ali.fastjson.version>1.2.25</ali.fastjson.version>
 
         <commons.fileupload.version>1.2.2</commons.fileupload.version>
         <commons-lang3.version>3.2.1</commons-lang3.version>
