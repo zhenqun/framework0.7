@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.fosung.framework.web.mvc.config.web.AppFilterAutoConfiguration,\
+com.fosung.framework.web.mvc.config.session.AppSessionAutoConfiguration,\
+com.fosung.framework.web.mvc.config.secure.AppWebSecureAutoConfiguration,\
+com.fosung.framework.web.mvc.config.web.AppMvcAutoConfiguration

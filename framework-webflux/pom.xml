@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.fosung.framework</groupId>
+        <artifactId>framework-parent</artifactId>
+        <version>0.7-SNAPSHOT</version>
+        <relativePath>../framework-parent</relativePath>
+    </parent>
+
+    <artifactId>framework-webflux</artifactId>
+
+    <dependencies>
+        <!--依赖web基础组件，不使用tomcat作为容器-->
+        <dependency>
+            <groupId>com.fosung.framework</groupId>
+            <artifactId>framework-web</artifactId>
+            <version>${framework.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                    <groupId>org.springframework.boot</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!--加入webflux依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+        </dependency>
+
+        <!--flux流测试步骤验证-->
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-test</artifactId>
+            <version>3.1.4.RELEASE</version>
+            <!--<scope>test</scope>-->
+        </dependency>
+
+    </dependencies>
+
+</project>

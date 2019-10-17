@@ -1,0 +1,9 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.fosung.framework.common.config.AppAutoConfiguration,\
+com.fosung.framework.common.support.redis.AppRedisConnectionAutoConfiguration
+
+org.springframework.boot.SpringApplicationRunListener=\
+com.fosung.framework.common.config.run.AppSpringApplicationRunListener
+
+org.springframework.boot.env.EnvironmentPostProcessor=\
+com.fosung.framework.common.config.support.AppEnvironmentPostProcessor
